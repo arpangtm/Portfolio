@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Image from "next/image";
-import { Ubuntu } from "next/font/google";
+import { Ubuntu, Instrument_Sans } from "next/font/google";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail, SiFacebook } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: "500" });
+const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
+
+const allRoles=['Web Dev','Mobile Dev','Tech Enthusiast','Web Designer']
 
 function HeroSection() {
   const parent = {
@@ -54,9 +57,9 @@ function HeroSection() {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 1 }}
             viewport={{ once: true }}
-            className={`${ubuntu.className} font-bold text-3xl text-center md:text-left lg:text-5xl whitespace-pre-wrap leading-relaxed lg:leading-loose`}
+            className={`${sans.className} font-bold text-3xl text-center md:text-left lg:text-5xl whitespace-pre-wrap leading-relaxed lg:leading-loose`}
           >
-            {`Hey There👋 \nI am Arpan, \nI am A <Software Dev/>`}
+            {`Hey There👋 \nI am `} <span className="text-[#a371f7]" style={{background:"linear-gradient(280deg, #3d67ff 0%, #9773ff 50%, #efceff 80%),#fff",WebkitTextFillColor:"transparent",WebkitBackgroundClip:"text"}}>Arpan<br></br>I am A,</span>{`  <Software Dev/>`}
           </motion.h1>
           <motion.a
             href="#contact"

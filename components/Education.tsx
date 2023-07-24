@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Instrument_Sans } from "next/font/google";
 
+const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
 function Education() {
   return (
     <section id="education" className="mt-32">
       <div id="projects" className="text-center font-black text-4xl mb-20">
-        <h1>Education</h1>
+        <h1 className={sans.className}>Education</h1>
       </div>
       <div className="flex flex-col relative items-center">
         <Image

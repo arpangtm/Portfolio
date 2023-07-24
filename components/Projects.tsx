@@ -1,6 +1,8 @@
 import React from "react";
 
+
 import { motion } from "framer-motion";
+import { Instrument_Sans } from "next/font/google";
 
 interface CardData {
   name: String;
@@ -40,12 +42,13 @@ const projects = [
     img: "/projects/moviedb.jpg",
   },
 ];
+const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
 
 function Projects() {
   return (
     <section>
       <div id="projects" className="text-center font-black text-4xl mb-20">
-        <h1>PROJECTS</h1>
+        <h1 className={sans.className}>PROJECTS</h1>
       </div>
       <div className="flex flex-col mx-5 xl:mx-56 space-y-10">
         {projects.map((project) => {
@@ -84,7 +87,8 @@ function ProjectCard({ id, name, tech, desc, img, url }: CardData) {
             scale: { duration: 0.2 },
           }}
           viewport={{ once: true }}
-          className={`object-cover w-full md:w-2/5 rounded-lg h-auto transition-all ease-in-out duration-300 group-hover:scale-125`}
+          className={`object-cover w-full md:w-2/5 rounded-lg h-auto transition-all ease-in-out duration-300 group-hover:scale-125 p-2`}
+          style={{"boxShadow":"0 0 10px 5px #f0f,0 0 15px 5px #0ff"}}
           src={img}
           width={200}
           height={200}

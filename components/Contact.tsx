@@ -3,6 +3,9 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { SiGmail, SiFacebook } from "react-icons/si";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Instrument_Sans } from "next/font/google";
+
+const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
 
 function Contact() {
   const parent = {
@@ -18,7 +21,7 @@ function Contact() {
   return (
     <section id="contact" className="mt-32">
       <div id="projects" className="text-center font-white text-4xl mb-20">
-        <h1>Contact Me</h1>
+        <h1 className={sans.className}>Contact Me</h1>
       </div>
       <div>
         <motion.div

@@ -1,5 +1,7 @@
 import React from "react";
 import { animate, motion } from "framer-motion";
+import { Instrument_Sans } from "next/font/google";
+
 
 const languagesDB = [
   { name: "Javascript", src: "/skills/js.png", id: 1 },
@@ -28,6 +30,8 @@ const others = [
   { name: "WebRTC", src: "/skills/webrtc.png", id: 5 },
 ];
 
+const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
+
 function Skills() {
   const parent = {
     initial: { opacity: 0 },
@@ -41,7 +45,7 @@ function Skills() {
   return (
     <section id="skills" className="mt-32 mx-5 md:mx-10 lg:mx-32">
       <div id="projects" className="text-center font-black text-4xl mb-20">
-        <h1>Skills</h1>
+        <h1 className={sans.className}>Skills</h1>
       </div>
       <div>
         <h3 className="text-2xl font-bold">Language</h3>
@@ -127,3 +131,4 @@ function Skills() {
 }
 
 export default Skills;
+
