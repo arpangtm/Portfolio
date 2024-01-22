@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { motion } from "framer-motion";
 import { Instrument_Sans } from "next/font/google";
 
@@ -15,8 +14,6 @@ interface CardData {
 
 const projects = [
   {
-    id: 1,
-    key: 1,
     name: "3d Tech Shop",
     url: "https://3dtechverse.arpangtm.com.np/",
     tech: ["3JS", "TAILWIND", "NEXT JS", "MONGODB", "NextAuth"],
@@ -24,8 +21,6 @@ const projects = [
     img: "/projects/3dtech.jpg",
   },
   {
-    id: 2,
-    key: 2,
     name: "Sanskar School",
     url: "https://www.sanskar.edu.np/",
     tech: ["HTML", "Typescript", "TAILWIND", "NEXT JS"],
@@ -33,8 +28,13 @@ const projects = [
     img: "/projects/sanskar.jpg",
   },
   {
-    id: 3,
-    key: 3,
+    name: "Mero Nepali Barnamala",
+    url: "https://meronepalibarnamala.com",
+    tech: ["Nextjs", "Tailwind", "AWS", "Express", "Nodejs", "Libreoffice"],
+    desc: "A platform designed for Nepali-origin children residing abroad to enhance their proficiency in the Nepali language.",
+    img: "/projects/meronepalibarnamala.png",
+  },
+  {
     name: "Movie DB",
     url: "https://moviedb.arpangtm.com.np/",
     tech: ["IMDB API", "CSS", "React"],
@@ -42,7 +42,7 @@ const projects = [
     img: "/projects/moviedb.jpg",
   },
 ];
-const sans= Instrument_Sans({subsets:["latin-ext"], weight:"700"})
+const sans = Instrument_Sans({ subsets: ["latin-ext"], weight: "700" });
 
 function Projects() {
   return (
@@ -51,11 +51,11 @@ function Projects() {
         <h1 className={sans.className}>PROJECTS</h1>
       </div>
       <div className="flex flex-col mx-5 xl:mx-56 space-y-10">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
             <ProjectCard
-              key={project.id}
-              id={project.id}
+              key={index}
+              id={index}
               name={project.name}
               tech={project.tech}
               desc={project.desc}
@@ -88,7 +88,7 @@ function ProjectCard({ id, name, tech, desc, img, url }: CardData) {
           }}
           viewport={{ once: true }}
           className={`object-cover w-full md:w-2/5 rounded-lg h-auto transition-all ease-in-out duration-300 group-hover:scale-125 p-2`}
-          style={{"boxShadow":"0 0 10px 5px #f0f,0 0 15px 5px #0ff"}}
+          style={{ boxShadow: "0 0 10px 5px #f0f,0 0 15px 5px #0ff" }}
           src={img}
           width={200}
           height={200}
