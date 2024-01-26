@@ -28,6 +28,14 @@ const projects = [
     img: "/projects/sanskar.jpg",
   },
   {
+    name: "DGMarket",
+    url: "https://dgmarket.arpangtm.com.np/",
+    tech: ["Nextjs", "TAILWIND", "tRPC", "MONGODB", "Payload CMS", "Stripe"],
+    desc: "An end-to-end ecommerce site with secure stripe payment, seller dashboard and responsive design.",
+    img: "/projects/dgmarket.png",
+  },
+
+  {
     name: "Mero Nepali Barnamala",
     url: "https://meronepalibarnamala.com",
     tech: ["Nextjs", "Tailwind", "AWS", "Express", "Nodejs", "Libreoffice"],
