@@ -14,6 +14,14 @@ interface CardData {
 
 const projects = [
   {
+    name: "DGMarket",
+    url: "https://dgmarket.arpangtm.com.np/",
+    tech: ["Nextjs", "TAILWIND", "tRPC", "MONGODB", "Payload CMS", "Stripe"],
+    desc: "An end-to-end ecommerce site with secure stripe payment, seller dashboard and responsive design.",
+    img: "/projects/dgmarket.png",
+  },
+
+  {
     name: "3d Tech Shop",
     url: "https://3dtechverse.arpangtm.com.np/",
     tech: ["3JS", "TAILWIND", "NEXT JS", "MONGODB", "NextAuth"],
@@ -26,13 +34,6 @@ const projects = [
     tech: ["HTML", "Typescript", "TAILWIND", "NEXT JS"],
     desc: "Official website for Sanskar Shikshyalaya with user-friendly interface that showcases school information, admissions, and curriculum details.",
     img: "/projects/sanskar.jpg",
-  },
-  {
-    name: "DGMarket",
-    url: "https://dgmarket.arpangtm.com.np/",
-    tech: ["Nextjs", "TAILWIND", "tRPC", "MONGODB", "Payload CMS", "Stripe"],
-    desc: "An end-to-end ecommerce site with secure stripe payment, seller dashboard and responsive design.",
-    img: "/projects/dgmarket.png",
   },
 
   {
