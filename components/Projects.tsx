@@ -40,7 +40,7 @@ const projects = [
     name: "Mero Nepali Barnamala",
     url: "https://meronepalibarnamala.com",
     tech: ["Nextjs", "Tailwind", "AWS", "Express", "Nodejs", "Libreoffice"],
-    desc: "A platform designed for Nepali-origin children residing abroad to enhance their proficiency in the Nepali language.",
+    desc: "A platform designed for Nepali-origin children residing abroad to enhance their proficiency in the Nepali language. Contains an interface for admin to upload and manage contents and users to view and print them",
     img: "/projects/meronepalibarnamala.png",
   },
   {
