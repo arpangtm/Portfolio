@@ -14,6 +14,13 @@ interface CardData {
 
 const projects = [
   {
+    name:"Databooku",
+    url:"https://www.databooku.com/",
+    tech: ["Nextjs", "Typescript", "MONGODB"],
+    desc: "A platform that consolidates public Jupyter Notebooks and Python scripts into a centralized location. It offers a showcase feature to demonstrate complete machine learning pipelines",
+    img:"/projects/databooku.png"
+  },
+  {
     name: "DGMarket",
     url: "https://dgmarket.arpangtm.com.np/",
     tech: ["Nextjs", "TAILWIND", "tRPC", "MONGODB", "Payload CMS", "Stripe"],
