@@ -32,7 +32,7 @@ const projects = [
     name: "3d Tech Shop",
     url: "https://3dtechverse.arpangtm.com.np/",
     tech: ["3JS", "TAILWIND", "NEXT JS", "MONGODB", "NextAuth"],
-    desc: "A 3D ecommerce website that has everything you need. You can browse products in amazing 3D, easily make payments, and securely create an account",
+    desc: "A 3D ecommerce website that has everything you need. You can browse products in amazing 3D, easily make payments, and securely create an account.",
     img: "/projects/3dtech.jpg",
   },
   {
