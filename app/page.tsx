@@ -1,5 +1,4 @@
 "use client";
-import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
@@ -33,9 +32,6 @@ export default function Home() {
       </div>
       <div>
         <Education></Education>
-      </div>
-      <div>
-        <Contact></Contact>
       </div>
     </div>
   );

@@ -14,48 +14,48 @@ interface CardData {
 
 const projects = [
   {
-    name:"Databooku",
-    url:"https://www.databooku.com/",
+    name: "Databooku",
+    url: "https://www.databooku.com/",
     tech: ["Nextjs", "Typescript", "MONGODB"],
     desc: "A platform that consolidates public Jupyter Notebooks and Python scripts into a centralized location. It offers a showcase feature to demonstrate complete machine learning pipelines",
-    img:"/projects/databooku.png"
+    img: "/projects/Databooku.png",
   },
   {
-    name: "DGMarket",
-    url: "https://dgmarket.arpangtm.com.np/",
-    tech: ["Nextjs", "TAILWIND", "tRPC", "MONGODB", "Payload CMS", "Stripe"],
-    desc: "An end-to-end ecommerce site with secure stripe payment, seller dashboard and responsive design.",
-    img: "/projects/dgmarket.png",
+    name: "MovAI",
+    url: "https://moviedb.arpangtm.com.np/",
+    tech: [
+      "ExpressJS",
+      "Typescript",
+      "AWS Dynamo DB",
+      "Lambda Function",
+      "React",
+      "LLM",
+    ],
+    desc: "Powered by the IMDb API, this website delivers a seamless and immersive experience, ensuring you have all the details you need at your fingertips.",
+    img: "/projects/MovieDB.png",
   },
-
   {
     name: "3d Tech Shop",
     url: "https://3dtechverse.arpangtm.com.np/",
     tech: ["3JS", "TAILWIND", "NEXT JS", "MONGODB", "NextAuth"],
     desc: "A 3D ecommerce website that has everything you need. You can browse products in amazing 3D, easily make payments, and securely create an account.",
-    img: "/projects/3dtech.jpg",
+    img: "/projects/3dtech.png",
   },
+
   {
     name: "Sanskar School",
     url: "https://www.sanskar.edu.np/",
     tech: ["HTML", "Typescript", "TAILWIND", "NEXT JS"],
     desc: "Official website for Sanskar Shikshyalaya with user-friendly interface that showcases school information, admissions, and curriculum details.",
-    img: "/projects/sanskar.jpg",
+    img: "/projects/Sanskar.png",
   },
 
   {
-    name: "Mero Nepali Barnamala",
-    url: "https://meronepalibarnamala.com",
-    tech: ["Nextjs", "Tailwind", "AWS", "Express", "Nodejs", "Libreoffice"],
-    desc: "A platform designed for Nepali-origin children residing abroad to enhance their proficiency in the Nepali language. Contains an interface for admin to upload and manage contents and users to view and print them",
-    img: "/projects/meronepalibarnamala.png",
-  },
-  {
-    name: "Movie DB",
-    url: "https://moviedb.arpangtm.com.np/",
-    tech: ["IMDB API", "CSS", "React"],
-    desc: "Powered by the IMDb API, this website delivers a seamless and immersive experience, ensuring you have all the details you need at your fingertips.",
-    img: "/projects/moviedb.jpg",
+    name: "NexCLI",
+    url: "https://github.com/arpangtm/nexcli",
+    tech: ["Python", "Langchain", "RAG"],
+    desc: "A command line interface for Nextjs projects",
+    img: "/projects/nexcli.png",
   },
 ];
 const sans = Instrument_Sans({ subsets: ["latin-ext"], weight: "700" });
@@ -104,10 +104,10 @@ function ProjectCard({ id, name, tech, desc, img, url }: CardData) {
           }}
           viewport={{ once: true }}
           className={`object-cover w-full md:w-2/5 rounded-lg h-auto transition-all ease-in-out duration-300 group-hover:scale-125 p-2`}
-          style={{ boxShadow: "0 0 10px 5px #f0f,0 0 15px 5px #0ff" }}
+          style={{ boxShadow: "0 0 1px 2px #f0f,0 0 3px 4px #0ff", maxHeight:"250px" }}
           src={img}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           alt=""
         ></motion.img>
         <motion.div
