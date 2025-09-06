@@ -181,12 +181,12 @@ const HeroSection = () => {
             {[
               {
                 icon: FiGithub,
-                href: "https://github.com/arpangautam",
+                href: "https://github.com/arpangtm",
                 label: "GitHub",
               },
               {
                 icon: FiLinkedin,
-                href: "https://www.linkedin.com/in/arpangautam/",
+                href: "https://www.linkedin.com/in/arpangtm/",
                 label: "LinkedIn",
               },
               {
